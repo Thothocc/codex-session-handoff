@@ -1,0 +1,42 @@
+<svg width="1100" height="340" viewBox="0 0 1100 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Workflow diagram">
+  <defs>
+    <linearGradient id="b" x1="0" x2="1">
+      <stop offset="0" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#14B8A6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1100" height="340" rx="28" fill="#F8FAFC"/>
+  <style>
+    .box{fill:#FFFFFF;stroke:#CBD5E1;stroke-width:2}
+    .title{font:700 24px Arial, sans-serif;fill:#0F172A}
+    .text{font:16px Arial, sans-serif;fill:#475569}
+    .arrow{stroke:url(#b);stroke-width:5;fill:none;marker-end:url(#m)}
+  </style>
+  <marker id="m" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M2,2 L10,6 L2,10" fill="#14B8A6"/>
+  </marker>
+  <rect class="box" x="48" y="84" width="190" height="150" rx="20"/>
+  <text class="title" x="78" y="126">Codex</text>
+  <text class="text" x="78" y="160">local JSONL</text>
+  <text class="text" x="78" y="184">sessions</text>
+
+  <path class="arrow" d="M250 160H330"/>
+  <rect class="box" x="342" y="84" width="220" height="150" rx="20"/>
+  <text class="title" x="372" y="126">This tool</text>
+  <text class="text" x="372" y="160">scan · rank · redact</text>
+  <text class="text" x="372" y="184">cluster · bundle</text>
+
+  <path class="arrow" d="M574 160H654"/>
+  <rect class="box" x="666" y="84" width="220" height="150" rx="20"/>
+  <text class="title" x="696" y="126">Evidence pack</text>
+  <text class="text" x="696" y="160">Markdown bundle</text>
+  <text class="text" x="696" y="184">+ copy-paste prompts</text>
+
+  <path class="arrow" d="M898 160H978"/>
+  <rect class="box" x="990" y="84" width="70" height="150" rx="20"/>
+  <text class="title" x="1008" y="126">GPT</text>
+  <text class="text" x="1007" y="160">Phase</text>
+  <text class="text" x="1007" y="184">1/2</text>
+  <text class="text" x="1007" y="208">report</text>
+  <text x="50" y="290" font-family="Arial, sans-serif" font-size="18" fill="#64748B">Upload CHATGPT_HANDOFF_INPUT.md, then paste NEXT_MESSAGE_PHASE1.txt. Review, confirm, then paste NEXT_MESSAGE_PHASE2.txt.</text>
+</svg>

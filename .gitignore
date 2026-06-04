@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Local generated packs / private outputs
+codex_handoff*/
+handoff_pack*/
+CHATGPT_HANDOFF_INPUT*.md
+NEXT_MESSAGE_PHASE*.txt
+PROMPT_PHASE*.md
+PACK_SUMMARY.md
+WORKSPACE_MAP.md
+DOCS_AUTHORITY*.md
+HISTORY_TIMELINE.md
+SESSION_CLUSTERING.md
+SESSION_SELECTION*.md
+PROJECT_SNAPSHOT.md
+session_digests/
+included_docs/
+
+# Raw Codex sessions
+*.jsonl
+rollout-*.jsonl
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/

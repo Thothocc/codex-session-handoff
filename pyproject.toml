@@ -1,0 +1,16 @@
+[project]
+name = "codex-session-handoff"
+version = "0.7.0"
+description = "Doc-first Codex session handoff packer for no-admin research servers."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [{name = "codex-session-handoff"}]
+dependencies = []
+
+[project.scripts]
+codex-handoff = "codex_handoff:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
