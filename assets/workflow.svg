@@ -1,42 +1,38 @@
-<svg width="1100" height="340" viewBox="0 0 1100 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Workflow diagram">
-  <defs>
-    <linearGradient id="b" x1="0" x2="1">
-      <stop offset="0" stop-color="#3B82F6"/>
-      <stop offset="1" stop-color="#14B8A6"/>
-    </linearGradient>
-  </defs>
-  <rect width="1100" height="340" rx="28" fill="#F8FAFC"/>
-  <style>
-    .box{fill:#FFFFFF;stroke:#CBD5E1;stroke-width:2}
-    .title{font:700 24px Arial, sans-serif;fill:#0F172A}
-    .text{font:16px Arial, sans-serif;fill:#475569}
-    .arrow{stroke:url(#b);stroke-width:5;fill:none;marker-end:url(#m)}
-  </style>
-  <marker id="m" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
-    <path d="M2,2 L10,6 L2,10" fill="#14B8A6"/>
-  </marker>
-  <rect class="box" x="48" y="84" width="190" height="150" rx="20"/>
-  <text class="title" x="78" y="126">Codex</text>
-  <text class="text" x="78" y="160">local JSONL</text>
-  <text class="text" x="78" y="184">sessions</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="520" viewBox="0 0 1400 520">
+  <rect width="1400" height="520" rx="28" fill="#f8fafc"/>
+  <text x="60" y="62" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#0f172a">Recommended workflow</text>
+  <text x="60" y="100" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#475569">Generate an evidence pack, upload one Markdown file, then paste the generated Phase 1 / Phase 2 prompts into ChatGPT.</text>
 
-  <path class="arrow" d="M250 160H330"/>
-  <rect class="box" x="342" y="84" width="220" height="150" rx="20"/>
-  <text class="title" x="372" y="126">This tool</text>
-  <text class="text" x="372" y="160">scan · rank · redact</text>
-  <text class="text" x="372" y="184">cluster · bundle</text>
+  <rect x="70" y="150" width="220" height="150" rx="20" fill="#ffffff" stroke="#cbd5e1" stroke-width="3"/>
+  <text x="104" y="196" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#0f172a">1. Codex</text>
+  <text x="104" y="232" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#475569">Local JSONL sessions</text>
+  <text x="104" y="260" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#475569">in ~/.codex/sessions</text>
 
-  <path class="arrow" d="M574 160H654"/>
-  <rect class="box" x="666" y="84" width="220" height="150" rx="20"/>
-  <text class="title" x="696" y="126">Evidence pack</text>
-  <text class="text" x="696" y="160">Markdown bundle</text>
-  <text class="text" x="696" y="184">+ copy-paste prompts</text>
+  <path d="M310 225 H390" stroke="#2563eb" stroke-width="6" stroke-linecap="round"/>
+  <path d="M378 212 L398 225 L378 238" fill="none" stroke="#2563eb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <path class="arrow" d="M898 160H978"/>
-  <rect class="box" x="990" y="84" width="70" height="150" rx="20"/>
-  <text class="title" x="1008" y="126">GPT</text>
-  <text class="text" x="1007" y="160">Phase</text>
-  <text class="text" x="1007" y="184">1/2</text>
-  <text class="text" x="1007" y="208">report</text>
-  <text x="50" y="290" font-family="Arial, sans-serif" font-size="18" fill="#64748B">Upload CHATGPT_HANDOFF_INPUT.md, then paste NEXT_MESSAGE_PHASE1.txt. Review, confirm, then paste NEXT_MESSAGE_PHASE2.txt.</text>
+  <rect x="420" y="150" width="240" height="150" rx="20" fill="#ffffff" stroke="#cbd5e1" stroke-width="3"/>
+  <text x="454" y="196" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#0f172a">2. This tool</text>
+  <text x="454" y="232" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#475569">Scan, redact, rank docs</text>
+  <text x="454" y="260" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#475569">and cluster sessions</text>
+
+  <path d="M682 225 H762" stroke="#2563eb" stroke-width="6" stroke-linecap="round"/>
+  <path d="M750 212 L770 225 L750 238" fill="none" stroke="#2563eb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="790" y="150" width="260" height="150" rx="20" fill="#ffffff" stroke="#cbd5e1" stroke-width="3"/>
+  <text x="824" y="196" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#0f172a">3. Evidence pack</text>
+  <text x="824" y="232" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#475569">CHATGPT_HANDOFF_INPUT.md</text>
+  <text x="824" y="260" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#475569">+ NEXT_MESSAGE prompts</text>
+
+  <path d="M1072 225 H1152" stroke="#2563eb" stroke-width="6" stroke-linecap="round"/>
+  <path d="M1140 212 L1160 225 L1140 238" fill="none" stroke="#2563eb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="1180" y="150" width="160" height="150" rx="20" fill="#ffffff" stroke="#cbd5e1" stroke-width="3"/>
+  <text x="1214" y="196" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#0f172a">4. GPT</text>
+  <text x="1214" y="232" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#475569">Phase 1 map</text>
+  <text x="1214" y="260" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#475569">Phase 2 report</text>
+
+  <rect x="70" y="350" width="1270" height="94" rx="18" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="2"/>
+  <text x="104" y="389" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#0f172a">ChatGPT steps</text>
+  <text x="104" y="424" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#334155">Upload CHATGPT_HANDOFF_INPUT.md → paste NEXT_MESSAGE_PHASE1.txt → review and confirm → paste NEXT_MESSAGE_PHASE2.txt → save the final report.</text>
 </svg>
